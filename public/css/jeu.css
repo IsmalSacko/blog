@@ -1,0 +1,54 @@
+.nepaAficher{
+    display: none;
+}
+
+#mesclones{
+    display: flex;
+}
+
+#image, #image-clone{
+    text-align: center;
+    background-color:bisque;
+    border: 2px solid lightgrey;  
+    margin: 6px; 
+    margin-top: 67px;
+    border-radius: 4%;
+}
+body{
+    background-color: rgb(0, 128, 107);    
+}
+h1{
+    color:antiquewhite; 
+    
+}
+header {
+    /* / background-color: #c9d1d3; */
+    /* text-align: center; */
+    padding: 15px;   
+
+    background: #e65c00;
+    background: -webkit-linear-gradient(to right, #F9D423, #e65c00);
+    background: linear-gradient(to right, #F9D423, #e65c00);
+    }
+
+    #navBody a:hover{
+     background-color: #e6a900f6;
+     color: beige;
+  }
+  .ma_class {
+    background: #e65c00;
+  background: -webkit-linear-gradient(to right, #F9D423, #e65c00);
+  background: linear-gradient(to right, #F9D423, #e65c00);
+  }
+  #navBody a:hover{
+   background-color: #e6a900f6;
+ }
+
+ .but{
+     margin-top: 25px;
+    
+ }
+
+.forme{
+    color: azure;
+}

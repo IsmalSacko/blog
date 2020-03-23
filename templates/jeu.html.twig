@@ -1,0 +1,45 @@
+{# {% extends "base.html.twig" %} #}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link  href="css/jeu.css" rel="stylesheet">
+{% block body %}
+{% include "common/entete.html.twig" %}         
+
+<div class="container ">
+    <div><span id="timer"></span></div>
+        <div class="row" id="form">
+            <div class="col-md-6">
+                <div class="col-md-3">&nbsp;</div>
+                <form action="" class="form-group" id="forme">
+                    <h1>Bienvenue sur la planette jeu</h1>
+                    <p class="forme">Le but du jeu est trouver le nombre de différence entre les couleurs et les éliminer avant que le temps ne s'écoule
+                    </p>
+                    <label for="Longeur">Lageur</label>
+                    <input type="text" onkeypress="return isNumberKey(event)" class="form-control" value="300"
+                        id="largeur" placeholder="Entre la Lageur">
+                    <label for="Hauteur">Hauteur</label>
+                    <input type="text" onkeypress="return isNumberKey(event)" class="form-control" value="300"
+                        id="hauteur" placeholder="Entre la hauteur">
+                    <label for="exampleInputEmail1">Nbre Erreur</label>
+                    <input type="text" onkeypress="return isNumberKey(event)" class="form-control" value="2"
+                        id="nbErreurs" placeholder="Entre le nombre d'erreur">
+                    <label for="exampleInputEmail1">Nbre Figure</label>
+                    <input type="text" onkeypress="return isNumberKey(event)" class="form-control" value="4"
+                        id="nbFigure" placeholder="Entre le nombre">
+                    <label for="exampleInputEmail1">Temps</label>
+                    <input type="text" onkeypress="return isNumberKey(event)" class="form-control" value="10"
+                        id="temps">
+                    <button type="" id="jouer" class="btn btn-primary mt-3">Jouer</button>
+                </form>              
+            </div>           
+        </div>
+        
+        <div class="col-md-12" id="mesclones">
+            <div class="col-md-6" id="image"></div>
+            <div class="col-md-6" id="image-clone"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/jeu.js"></script> 
+
+    
+{% endblock %}
